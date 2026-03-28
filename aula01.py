@@ -7,7 +7,7 @@ janela = Window(2000, 1500)
 janela.set_title("Exercício 2")
 janela.set_background_color((255, 0, 255))
 
-bolinhe = Sprite('bolaa.png')
+bolinhe = Sprite('boly.png')
 bolinhe.x, bolinhe.y = 1000, 500
 
 while True:
