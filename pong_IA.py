@@ -12,11 +12,11 @@ controle = janela.get_keyboard()
 
 # Pads
 pad1 = Sprite("traço.png")
-pad1.x = 0
+pad1.x = pad1.width * 2
 pad1.y = janela.height/2 - pad1.height/2
 
 pad2 = Sprite("traço.png")
-pad2.x = janela.width - pad2.width
+pad2.x = janela.width - (pad2.width * 3)
 pad2.y = janela.height/2 - pad2.height/2
 
 # Bola
@@ -100,7 +100,7 @@ while True:
         vely = 0
         Colidiu = True
 
-    
+    # APERTAR ESPAÇO PRA RECOMEÇAR
     if Colidiu and controle.key_pressed("space"):
         velx = -300   # pode trocar depois
         vely = 200
